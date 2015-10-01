@@ -1,4 +1,7 @@
-﻿import express = require("express");
+﻿/*
+ * GET /users
+ */
+import express = require("express");
 
 // GET /users
 export function index(req: express.Request, res: express.Response) {

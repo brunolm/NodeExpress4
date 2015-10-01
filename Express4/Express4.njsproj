@@ -34,14 +34,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Content Include="views\layouts\layout.hbs" />
     <TypeScriptCompile Include="routes\users.ts" />
     <Compile Include="bin\www" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
-    <Content Include="views\index.jade" />
-    <Content Include="views\layout.jade" />
-    <Content Include="views\error.jade" />
+    <Content Include="views\index.hbs" />
+    <Content Include="views\error.hbs" />
+    <TypeScriptCompile Include="Scripts\typings\mongoose\mongoose.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
@@ -53,9 +54,11 @@
     <Folder Include="Scripts\" />
     <Folder Include="Scripts\typings\" />
     <Folder Include="Scripts\typings\express\" />
+    <Folder Include="Scripts\typings\mongoose\" />
     <Folder Include="Scripts\typings\node\" />
     <Folder Include="Scripts\typings\stylus\" />
     <Folder Include="views\" />
+    <Folder Include="views\layouts\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="routes\index.ts" />
