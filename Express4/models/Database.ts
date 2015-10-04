@@ -1,9 +1,5 @@
 ﻿import mongoose = require("mongoose");
 
-export function Connect() {
-    mongoose.connect("mongodb://localhost/NodeExpress4");
-}
-
 export module Schema {
     //#region Item
     export const Item = "Item";
