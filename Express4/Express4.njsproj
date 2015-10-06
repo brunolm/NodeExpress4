@@ -38,6 +38,7 @@
     <Content Include="views\home\index.hbs" />
     <Content Include="views\layouts\layout.hbs" />
     <TypeScriptCompile Include="controllers\BaseController.ts" />
+    <TypeScriptCompile Include="controllers\Index.ts" />
     <TypeScriptCompile Include="models\Database.ts" />
     <TypeScriptCompile Include="controllers\UserController.ts" />
     <Compile Include="bin\www" />

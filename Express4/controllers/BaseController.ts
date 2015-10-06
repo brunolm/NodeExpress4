@@ -1,6 +1,7 @@
 ﻿import express = require("express");
 
-export class BaseController {
-    static run(req: express.Request, res: express.Response) {
-    }
+abstract class BaseController {
+    abstract Register(app: express.Application);
 }
+
+export = BaseController;

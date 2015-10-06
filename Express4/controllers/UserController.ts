@@ -6,16 +6,18 @@ import mongoose = require("mongoose");
 import db = require("../models/Database");
 import vm = require("../viewmodels/home/IndexViewModel");
 
-import baseController = require("./BaseController");
+import BaseController = require("./BaseController");
 
-class UserController extends baseController.BaseController {
+class UserController extends BaseController {
 
     // GET /user
-    static Index(req: express.Request, res: express.Response) {
-        super.run(req, res);
-
+    Index(req: express.Request, res: express.Response) {
         res.render("user/index", {});
+    }
+
+    Register(app: express.Application) {
+        app.use("/", this.Index);
     }
 }
 
-export = UserController;
+export = new UserController();
